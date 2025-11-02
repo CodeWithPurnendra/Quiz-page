@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -41,4 +45,9 @@
 .nav-bar a:hover {
   color: #01f335;
   transform: scale(1.1);
+}
+
+.heading{
+  border-bottom: 3px solid rgba(128, 128, 128, 0.801);
+  margin-top: 10px;
 }
