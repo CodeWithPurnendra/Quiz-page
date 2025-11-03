@@ -47,7 +47,137 @@ html{
   transform: scale(1.1);
 }
 
-.heading{
-  border-bottom: 3px solid rgba(128, 128, 128, 0.801);
-  margin-top: 10px;
+/* ========== General Reset & Base Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ========== Main Container ========== */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+/* ========== Headings ========== */
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1a73e8;
+  border-left: 5px solid #1a73e8;
+  padding-left: 10px;
+}
+
+/* ========== Student Info Section ========== */
+.information {
+  background-color: #f0f4ff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.information label {
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+
+.information input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 0.3rem;
+}
+
+/* ========== Question Containers ========== */
+.question-container {
+  margin-top: 1.5rem;
+}
+
+.html-questions,
+.css-questions {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.html-questions:hover,
+.css-questions:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== Question Titles ========== */
+h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+
+/* ========== Radio Button Styling ========== */
+label {
+  display: block;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: #1a73e8;
+  margin-right: 6px;
+}
+
+/* ========== Submit Button ========== */
+.submit-btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 2rem auto 0;
+  padding: 0.8rem 1.2rem;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.03);
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .information input {
+    max-width: 100%;
+  }
 }

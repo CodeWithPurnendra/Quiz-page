@@ -1,612 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Take engaging quizzes on HTML, CSS, and more. Learn and test your knowledge interactively on QuizZone, created by Purnendra.">
-    <meta name="keywords" content="quiz, html quiz, css quiz, web development, online quiz, frontend, learning, quizzone, purnendra">
-    <meta name="author" content="Purnendra">
-    <meta property="og:title" content="QuizZone 💡 | Interactive Web Quiz by Purnendra">
-    <meta property="og:description" content="Test your web development knowledge with fun and interactive quizzes on HTML, CSS, and more!">
-    <meta property="og:image" content="https://example.com/quiz-thumbnail.jpg">
-    <meta property="og:url" content="https://example.com/quizzone">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="QuizZone 💡 | Interactive Quiz by Purnendra">
-    <meta name="twitter:description" content="Take fun web quizzes on HTML and CSS. Created by Purnendra.">
-    <meta name="twitter:image" content="https://example.com/quiz-thumbnail.jpg">
-    
-    <title>QuizZone💡| Interactive Quiz by Purnendra</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Take engaging quizzes on HTML, CSS, and more. Learn and test your knowledge interactively on QuizZone, created by Purnendra.">
+  <meta name="keywords" content="quiz, html quiz, css quiz, web development, online quiz, frontend, learning, quizzone, purnendra">
+  <meta name="author" content="Purnendra">
+  <meta property="og:title" content="QuizZone 💡 | Interactive Web Quiz by Purnendra">
+  <meta property="og:description" content="Test your web development knowledge with fun and interactive quizzes on HTML, CSS, and more!">
+  <meta property="og:image" content="https://example.com/quiz-thumbnail.jpg">
+  <meta property="og:url" content="https://example.com/quizzone">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="QuizZone 💡 | Interactive Quiz by Purnendra">
+  <meta name="twitter:description" content="Take fun web quizzes on HTML and CSS. Created by Purnendra.">
+  <meta name="twitter:image" content="https://example.com/quiz-thumbnail.jpg">
+  
+  <title>QuizZone💡| Interactive Quiz by Purnendra</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="nav-bar">
-        <h1 class="logo">QuizZone💡</h1>
-        <nav>
-            <ul>
-                <li><a href="#info">Info</a></li>
-                <li><a href="#html">HTML Quiz</a></li>
-                <li><a href="#css">CSS Quiz</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="nav-bar">
+    <h1 class="logo">QuizZone💡</h1>
+    <nav>
+      <ul>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#html">HTML Quiz</a></li>
+        <li><a href="#css">CSS Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="container">
-        <section>
-            <h2 class="heading" id="info">Student Info</h2>
-            <div class="information">
-                <form action="action.php">
+  <main class="container">
+    <!-- Student Info -->
+    <section>
+      <h2 class="heading" id="info">Student Info</h2>
+      <div class="information">
+        <form action="action.php">
+          <label for="student-name">Student Name: </label>
+          <input type="text" id="student-name" required><br>
 
-                    <label for="student-name">Student Name: </label>
-                    <input type="text" id="student-name" required>
-                    <br>
+          <label for="email">Email: </label>
+          <input type="email" id="email" required><br>
 
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" required>
-                    <br>
+          <label for="age">Age: </label>
+          <input type="number" id="age" min="9" max="80" required><br>
 
-                    <label for="age">Age: </label>
-                    <input type="number" id="age" min="9" max="80" required>
-                    <br>
+          <label for="school-name">School or Institution Name: </label>
+          <input type="text" id="school-name"><br>
+        </form>
+      </div>
+    </section>
 
-                    <label for="school-name">School or Institution Name: </label>
-                    <input type="text" id="school-name">
-                    <br>
-                </form>
-            </div>
-        </section>
+    <!-- ========== HTML QUESTIONS ========== -->
+    <h2 class="heading" id="html">HTML QUESTIONS</h2>
+    <section>
+      <div class="question-container">
 
-        <h2 class="heading" id="html">HTML QUESTIONS</h2>
-        <section>
-        <div class="question-container">
-            <div class="html-questions"  role="group" aria-labelledby="q1-label">
-               <h3 id="q1-label">1. What does HTML stand for?</h3>
-                
-                <label>
-                    <input type="radio" name="q1" value="hyper text transfer protocol">
-                     Hyper Text Transfer Protocol
-                </label>
-                <br>
-    
-                <label for="q2">
-                    <input type="radio" name="q1" value="high tech mordern language">
-                     High Tech Mordern Language
-                </label>
-                <br>
-    
-                <label for="q3">
-                    <input type="radio" name="q1" value=" hyper transfer markup language">
-                     Hyper Transfer Markup Language
-                </label>
-                <br>
+        <!-- Q1 -->
+        <div class="html-questions" role="group" aria-labelledby="q1-label">
+          <h3 id="q1-label">1. What does HTML stand for?</h3>
 
-                 <label>
-                    <input type="radio" name="q1" value="home tool markup language">
-                     Home Tool Markup Language
-                </label>
-                 </div>
-                 
-                 <div class="html-questions"  role="group" aria-labelledby="q2-label">
-               <h3 id="q2-label">2. Which tag is used to define the main content of an HTML document?</h3>
-                
-                <label>
-                    <input type="radio" name="q2" value="main">
-                     &lt;main&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q2" value="content">
-                     &lt;content&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q2" value="body">
-                      &lt;body&gt;
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q2" value="section">
-                    &lt;section&gt;
-                </label>
-                 </div>    
-
-                 <div class="html-questions"  role="group" aria-labelledby="q3-label">
-               <h3 id="q3-label">3. Which attribute is used to provide a unique name for an HTML document?</h3>
-                
-                <label>
-                    <input type="radio" name="q3" value="class">
-                     class
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q3" value="name">
-                     name
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q3" value="id">
-                      id
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q3" value="type">
-                    type
-                </label>
-                 </div> 
-                 
-                 <div class="html-questions"  role="group" aria-labelledby="q4-label">
-               <h3 id="q4-label">4. What is the correct way to create a hyperlink in HTML?</h3>
-                
-                <label>
-                    <input type="radio" name="q4" value="example">
-                     &lt;a url="https://www.example.com"&gt;Example&lt;/a&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q4" value="example">
-                     &lt;a href="https://www.example.com"&gt;Example&lt;/a&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q4" value="example">
-                      &lt;link="https://www.example.com"&gt;Example&lt;/link&gt;
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q4" value="example">
-                    &lt;a&gt; https://www.example.com &lt;/a&gt;
-                </label>
-                 </div>    
-
-                 <div class="html-questions"  role="group" aria-labelledby="q5-label">
-               <h3 id="q5-label">5. Which tag is used to create a numbered(ordered) list?</h3>
-                
-                <label>
-                    <input type="radio" name="q5" value="unordered-list">
-                     &lt;ul&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q5" value="list">
-                     &lt;list&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q5" value="ordered-list">
-                      &lt;ol&gt;
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q5" value="li">
-                    &lt;li&gt;
-                </label>
-                 </div>    
-
-                 <div class="html-questions"  role="group" aria-labelledby="q6-label">
-               <h3 id="q6-label">6. What is the following is the correct way to insert an image?</h3>
-                
-                <label>
-                    <input type="radio" name="q6" value="image">
-                     &lt;img src="image.jpg" alt="My Image"&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q6" value="image">
-                     &lt;image source="image.jpg" alt="My Image"&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q6" value="image">
-                     &lt;img href="image.jpg" alt="My Image"&gt;
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q6" value="image">
-                   &lt;img alt="My Image"&gt; image.jpg&lt;/img&gt;
-                </label>
-                 </div>    
-
-                 <div class="html-questions"  role="group" aria-labelledby="q7-label">
-               <h3 id="q7-label">7. Which is HTML5 tag is used to define navigation links?</h3>
-                
-                <label>
-                    <input type="radio" name="q7" value="navbar">
-                     &lt;navbar&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q7" value="nav">
-                     &lt;nav&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q7" value="navigation">
-                      &lt;navigation&gt;
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q7" value="links">
-                    &lt;links&gt;
-                </label>
-                 </div>  
-                 
-                  <div class="html-questions"  role="group" aria-labelledby="q8-label">
-               <h3 id="q8-label">8. What is the purpose of the &lt;! DOCTYPE html&gt; declaration?</h3>
-                
-                <label>
-                    <input type="radio" name="q8" value="defines character set">
-                    It defines the document's character set.
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q8" value="links different files">
-                   It links the HTML file to a CSS stylesheet.
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q8" value=" to create a comment">
-                     It is a tag to create a comment.
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q8" value="home tool markup language">
-                    It instructs the browser about the HTML version being used.
-                </label>
-                 </div>
-                 
-                 <div class="html-questions"  role="group" aria-labelledby="q9-label">
-               <h3 id="q9-label">9. Which input type creates a field for entering a password?</h3>
-                
-                <label>
-                    <input type="radio" name="q9" value="hidden">
-                     type="hidden"
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q9" value="text">
-                     type="text"
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q9" value="password">
-                      type="password"
-                </label>
-                <br>
-
-                 <label>
-                    <input type="radio" name="q9" value="secret">
-                    type="secret"
-                </label>
-                 </div> 
-                 
-                 <div class="html-questions"  role="group" aria-labelledby="q10-label">
-               <h3 id="q10-label">10. Which tag is used to define a table row?</h3>
-                
-                <label>
-                    <input type="radio" name="q10" value="table-data">
-                     &lt;td&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q10" value="table-head">
-                     &lt;th&gt;
-                </label>
-                <br>
-    
-                <label>
-                    <input type="radio" name="q10" value="table-row">
-                      &lt;tr&gt;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q10" value="table-row">
-                    &lt;table-row&gt;
-                </label>
-               </div>  
-              </form>
-            </div>
+          <label for="q1a">A) <input type="radio" id="q1a" name="q1" value="hyper text transfer protocol"> Hyper Text Transfer Protocol</label><br>
+          <label for="q1b">B) <input type="radio" id="q1b" name="q1" value="high tech modern language"> High Tech Modern Language</label><br>
+          <label for="q1c">C) <input type="radio" id="q1c" name="q1" value="hyper text markup language"> Hyper Text Markup Language</label><br>
+          <label for="q1d">D) <input type="radio" id="q1d" name="q1" value="home tool markup language"> Home Tool Markup Language</label>
         </div>
+
+        <!-- Q2 -->
+        <div class="html-questions" role="group" aria-labelledby="q2-label">
+          <h3 id="q2-label">2. Which tag defines the main content of an HTML document?</h3>
+
+          <label for="q2a">A) <input type="radio" id="q2a" name="q2" value="main"> &lt;main&gt;</label><br>
+          <label for="q2b">B) <input type="radio" id="q2b" name="q2" value="content"> &lt;content&gt;</label><br>
+          <label for="q2c">C) <input type="radio" id="q2c" name="q2" value="body"> &lt;body&gt;</label><br>
+          <label for="q2d">D) <input type="radio" id="q2d" name="q2" value="section"> &lt;section&gt;</label>
+        </div>
+
+        <!-- Q3 -->
+        <div class="html-questions" role="group" aria-labelledby="q3-label">
+          <h3 id="q3-label">3. Which attribute gives a unique identifier to an HTML element?</h3>
+
+          <label for="q3a">A) <input type="radio" id="q3a" name="q3" value="class"> class</label><br>
+          <label for="q3b">B) <input type="radio" id="q3b" name="q3" value="name"> name</label><br>
+          <label for="q3c">C) <input type="radio" id="q3c" name="q3" value="id"> id</label><br>
+          <label for="q3d">D) <input type="radio" id="q3d" name="q3" value="type"> type</label>
+        </div>
+
+        <!-- Q4 -->
+        <div class="html-questions" role="group" aria-labelledby="q4-label">
+          <h3 id="q4-label">4. What is the correct syntax to create a hyperlink in HTML?</h3>
+
+          <label for="q4a">A) <input type="radio" id="q4a" name="q4" value="url"> &lt;a url="https://example.com"&gt;Example&lt;/a&gt;</label><br>
+          <label for="q4b">B) <input type="radio" id="q4b" name="q4" value="href"> &lt;a href="https://example.com"&gt;Example&lt;/a&gt;</label><br>
+          <label for="q4c">C) <input type="radio" id="q4c" name="q4" value="link"> &lt;link="https://example.com"&gt;Example&lt;/link&gt;</label><br>
+          <label for="q4d">D) <input type="radio" id="q4d" name="q4" value="plain"> &lt;a&gt; https://example.com &lt;/a&gt;</label>
+        </div>
+
+        <!-- Q5 -->
+        <div class="html-questions" role="group" aria-labelledby="q5-label">
+          <h3 id="q5-label">5. Which tag creates an ordered list?</h3>
+
+          <label for="q5a">A) <input type="radio" id="q5a" name="q5" value="ul"> &lt;ul&gt;</label><br>
+          <label for="q5b">B) <input type="radio" id="q5b" name="q5" value="list"> &lt;list&gt;</label><br>
+          <label for="q5c">C) <input type="radio" id="q5c" name="q5" value="ol"> &lt;ol&gt;</label><br>
+          <label for="q5d">D) <input type="radio" id="q5d" name="q5" value="li"> &lt;li&gt;</label>
+        </div>
+
+        <!-- Q6 -->
+        <div class="html-questions" role="group" aria-labelledby="q6-label">
+          <h3 id="q6-label">6. Which is the correct way to insert an image?</h3>
+
+          <label for="q6a">A) <input type="radio" id="q6a" name="q6" value="img-src"> &lt;img src="image.jpg" alt="My Image"&gt;</label><br>
+          <label for="q6b">B) <input type="radio" id="q6b" name="q6" value="image-source"> &lt;image source="image.jpg" alt="My Image"&gt;</label><br>
+          <label for="q6c">C) <input type="radio" id="q6c" name="q6" value="img-href"> &lt;img href="image.jpg" alt="My Image"&gt;</label><br>
+          <label for="q6d">D) <input type="radio" id="q6d" name="q6" value="img-inner"> &lt;img alt="My Image"&gt;image.jpg&lt;/img&gt;</label>
+        </div>
+
+        <!-- Q7 -->
+        <div class="html-questions" role="group" aria-labelledby="q7-label">
+          <h3 id="q7-label">7. Which HTML5 tag defines navigation links?</h3>
+
+          <label for="q7a">A) <input type="radio" id="q7a" name="q7" value="navbar"> &lt;navbar&gt;</label><br>
+          <label for="q7b">B) <input type="radio" id="q7b" name="q7" value="nav"> &lt;nav&gt;</label><br>
+          <label for="q7c">C) <input type="radio" id="q7c" name="q7" value="navigation"> &lt;navigation&gt;</label><br>
+          <label for="q7d">D) <input type="radio" id="q7d" name="q7" value="links"> &lt;links&gt;</label>
+        </div>
+
+        <!-- Q8 -->
+        <div class="html-questions" role="group" aria-labelledby="q8-label">
+          <h3 id="q8-label">8. What is the purpose of &lt;!DOCTYPE html&gt;?</h3>
+
+          <label for="q8a">A) <input type="radio" id="q8a" name="q8" value="charset"> It defines the document's character set.</label><br>
+          <label for="q8b">B) <input type="radio" id="q8b" name="q8" value="link"> It links the HTML file to a CSS stylesheet.</label><br>
+          <label for="q8c">C) <input type="radio" id="q8c" name="q8" value="comment"> It is used to create a comment.</label><br>
+          <label for="q8d">D) <input type="radio" id="q8d" name="q8" value="instruction"> It instructs the browser about the HTML version being used.</label>
+        </div>
+
+        <!-- Q9 -->
+        <div class="html-questions" role="group" aria-labelledby="q9-label">
+          <h3 id="q9-label">9. Which input type creates a password field?</h3>
+
+          <label for="q9a">A) <input type="radio" id="q9a" name="q9" value="hidden"> type="hidden"</label><br>
+          <label for="q9b">B) <input type="radio" id="q9b" name="q9" value="text"> type="text"</label><br>
+          <label for="q9c">C) <input type="radio" id="q9c" name="q9" value="password"> type="password"</label><br>
+          <label for="q9d">D) <input type="radio" id="q9d" name="q9" value="secret"> type="secret"</label>
+        </div>
+
+        <!-- Q10 -->
+        <div class="html-questions" role="group" aria-labelledby="q10-label">
+          <h3 id="q10-label">10. Which tag defines a table row?</h3>
+
+          <label for="q10a">A) <input type="radio" id="q10a" name="q10" value="td"> &lt;td&gt;</label><br>
+          <label for="q10b">B) <input type="radio" id="q10b" name="q10" value="th"> &lt;th&gt;</label><br>
+          <label for="q10c">C) <input type="radio" id="q10c" name="q10" value="tr"> &lt;tr&gt;</label><br>
+          <label for="q10d">D) <input type="radio" id="q10d" name="q10" value="table-row"> &lt;table-row&gt;</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CSS QUESTIONS ========== -->
+    <section>
+      <h2 class="heading" id="css">CSS QUESTIONS</h2>
+      <div class="question-container">
+
+        <!-- Q1 -->
+        <div class="css-questions" role="group" aria-labelledby="c1-label">
+          <h3 id="c1-label">1. What does CSS stand for?</h3>
+
+          <label for="c1a">A) <input type="radio" id="c1a" name="c1" value="computer style sheets"> Computer Style Sheets</label><br>
+          <label for="c1b">B) <input type="radio" id="c1b" name="c1" value="creative style system"> Creative Style System</label><br>
+          <label for="c1c">C) <input type="radio" id="c1c" name="c1" value="cascading style sheets"> Cascading Style Sheets</label><br>
+          <label for="c1d">D) <input type="radio" id="c1d" name="c1" value="colorful style syntax"> Colorful Style Syntax</label>
+        </div>
+
+        <!-- Q2 -->
+        <div class="css-questions" role="group" aria-labelledby="c2-label">
+          <h3 id="c2-label">2. Which CSS property changes text color?</h3>
+
+          <label for="c2a">A) <input type="radio" id="c2a" name="c2" value="text-color"> text-color</label><br>
+          <label for="c2b">B) <input type="radio" id="c2b" name="c2" value="font-color"> font-color</label><br>
+          <label for="c2c">C) <input type="radio" id="c2c" name="c2" value="color"> color</label><br>
+          <label for="c2d">D) <input type="radio" id="c2d" name="c2" value="text-style"> text-style</label>
+        </div>
+
+        <!-- Q3 -->
+        <div class="css-questions" role="group" aria-labelledby="c3-label">
+          <h3 id="c3-label">3. How do you select an element with id "header"?</h3>
+
+          <label for="c3a">A) <input type="radio" id="c3a" name="c3" value="#header"> #header</label><br>
+          <label for="c3b">B) <input type="radio" id="c3b" name="c3" value=".header"> .header</label><br>
+          <label for="c3c">C) <input type="radio" id="c3c" name="c3" value="header"> header</label><br>
+          <label for="c3d">D) <input type="radio" id="c3d" name="c3" value="*header"> *header</label>
+        </div>
+
+        <!-- Q4 -->
+        <div class="css-questions" role="group" aria-labelledby="c4-label">
+          <h3 id="c4-label">4. Which property changes the font of an element?</h3>
+
+          <label for="c4a">A) <input type="radio" id="c4a" name="c4" value="font-family"> font-family</label><br>
+          <label for="c4b">B) <input type="radio" id="c4b" name="c4" value="text-style"> text-style</label><br>
+          <label for="c4c">C) <input type="radio" id="c4c" name="c4" value="font-style"> font-style</label><br>
+          <label for="c4d">D) <input type="radio" id="c4d" name="c4" value="font-weight"> font-weight</label>
+        </div>
+
+        <!-- Q5 -->
+        <div class="css-questions" role="group" aria-labelledby="c5-label">
+          <h3 id="c5-label">5. How do you make each word start with a capital letter?</h3>
+
+          <label for="c5a">A) <input type="radio" id="c5a" name="c5" value="text-style"> text-style: capitalize;</label><br>
+          <label for="c5b">B) <input type="radio" id="c5b" name="c5" value="text-transform"> text-transform: capitalize;</label><br>
+          <label for="c5c">C) <input type="radio" id="c5c" name="c5" value="transform"> transform: capitalize;</label><br>
+          <label for="c5d">D) <input type="radio" id="c5d" name="c5" value="variant"> font-variant: small-caps;</label>
+          </div>
+
+           <!-- Q6 -->
+        <div class="css-questions" role="group" aria-labelledby="c6-label">
+          <h3 id="c6-label">6. what is the correct way to apply a margin of 10 pixels on all sides of a div element?</h3>
+
+          <label for="c6a">A) <input type="radio" id="c6a" name="c6" value="margin-top"> margin: 10px 0 0 0;</label><br>
+          <label for="c6b">B) <input type="radio" id="c6b" name="c6" value="margin"> margin: 10px;</label><br>
+          <label for="c6c">C) <input type="radio" id="c6c" name="c6" value="margin-all"> margin: all 10px;</label><br>
+          <label for="c6d">D) <input type="radio" id="c6d" name="c6" value="padding"> padding: 10px;</label>
+          </div>
+
+           <!-- Q7 -->
+        <div class="css-questions" role="group" aria-labelledby="c7-label">
+          <h3 id="c7-label">7. The Box Model in CSS consists of which of the following components(from inside out)?</h3>
+
+          <label for="c7a">A) <input type="radio" id="c7a" name="c7" value="margin-top"> Margin,Border,Padding,Content</label><br>
+          <label for="c7b">B) <input type="radio" id="c7b" name="c7" value="margin">Content,Padding,Border,Margin</label><br>
+          <label for="c7c">C) <input type="radio" id="c7c" name="c7" value="margin-all">Padding,Content,Margin,Border</label><br>
+          <label for="c7d">D) <input type="radio" id="c7d" name="c7" value="padding">Border,Padding,Content,Margin</label>
+          </div>
+
+           <!-- Q8 -->
+        <div class="css-questions" role="group" aria-labelledby="c8-label">
+          <h3 id="c8-label">8. Which property is used to create space between the elements border and it's content?</h3>
+
+          <label for="c8a">A) <input type="radio" id="c8a" name="c8" value="margin">margin</label><br>
+          <label for="c8b">B) <input type="radio" id="c8b" name="c8" value="spacing">spacing</label><br>
+          <label for="c8c">C) <input type="radio" id="c8c" name="c8" value="border-spacing">border-spacing</label><br>
+          <label for="c8d">D) <input type="radio" id="c8d" name="c8" value="padding">padding</label>
+          </div>
+
+            <!-- Q9 -->
+        <div class="css-questions" role="group" aria-labelledby="c9-label">
+          <h3 id="c9-label">9. Which display property value is used to treat an element as if it doesn't exist in the document flow?</h3>
+
+          <label for="c9a">A) <input type="radio" id="c9a" name="c9" value="margin">margin</label><br>
+          <label for="c9b">B) <input type="radio" id="c9b" name="c9" value="spacing">spacing</label><br>
+          <label for="c9c">C) <input type="radio" id="c9c" name="c9" value="border-spacing">border-spacing</label><br>
+          <label for="c9d">D) <input type="radio" id="c9d" name="c9" value="padding">padding</label>
+          </div>
+
+          <!-- Q10 -->
+        <div class="css-questions" role="group" aria-labelledby="c10-label">
+          <h3 id="c10-label">10. In Flexbox, which property is used on the contaiener to align items vertically(along the cross-axis)?</h3>
+
+          <label for="c10a">A) <input type="radio" id="c10a" name="c10" value="justify-content">justify-content</label><br>
+          <label for="c10b">B) <input type="radio" id="c10b" name="c10" value="align-content">align-content</label><br>
+          <label for="c10c">C) <input type="radio" id="c10c" name="c10" value="align-items">align-items</label><br>
+          <label for="c10d">D) <input type="radio" id="c10d" name="c10" value="vertical-align">vertical-align</label>
+          </div>
+          </div>
         </section>
+
+         <button type="submit" class="submit-btn">Submit</button>
+        </main>
+
+        <footer>
+
+        </footer>
+        </body>
+        </html>
         
-        <section>
-            <h2 class="heading" id="css">CSS QUESTIONS</h2>
-              <div class="question-container">
-            <div class="css-questions"  role="group" aria-labelledby="q1-label">
-                <h3 id="q1-label">1. What does CSS stand for?</h3>
-                
-                <label>
-                    <input type="radio" name="q1" value="computer style sheets">
-                    Computer Style Sheets
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q1" value="creative style system">
-                   Crative Style System
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q1" value="cascading style sheets">
-                     Cascading Style Sheets
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q1" value="colorful style syntax">
-                    Colorful Style Syntax
-                </label>
-            </div>
-
-            <div class="css-questions"  role="group" aria-labelledby="q2-label">
-                <h3 id="q2-label">2. Which CSS property is used to change the text color for an element?</h3>
-                
-                <label>
-                    <input type="radio" name="q2" value="text-color">
-                    text-color
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q2" value="font-color">
-                   font-color
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q2" value="color">
-                     color
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q2" value="text-style">
-                   text-style
-                </label>
-            </div>
-
-            <div class="css-questions"  role="group" aria-labelledby="q3-label">
-                <h3 id="q3-label">3. How do you select an element with the id "header" in CSS?</h3>
-                
-                <label>
-                    <input type="radio" name="q3" value="id-header">
-                    #header
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q3" value="class-header">
-                   .header
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q3" value="header">
-                     header 
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q3" value="header">
-                   *header
-                </label>
-            </div>
-
-            <div class="css-questions"  role="group" aria-labelledby="q4-label">
-                <h3 id="q4-label">4. What property is used to change the font of an element?</h3>
-                
-                <label>
-                    <input type="radio" name="q4" value="font-family">
-                    font-family
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q4" value="text-style">
-                   text-style
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q4" value="font-style">
-                     font-style 
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q4" value="font-weight">
-                   font-weight
-                </label>
-            </div>
-
-            <div class="css-questions"  role="group" aria-labelledby="q5-label">
-                <h3 id="q5-label">5. How do you make each word in a text start with a capital letter?</h3>
-                
-                <label>
-                    <input type="radio" name="q5" value="capitalize">
-                    text-style: capitalize;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q5" value="capitalize">
-                   text-transform: capitalize;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q5" value="transform">
-                     transform: capitalize;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q5" value="varient">
-                   font-varient: small-caps;
-                </label>
-            </div>
-
-             <div class="css-questions"  role="group" aria-labelledby="q6-label">
-                <h3 id="q6-label">6. What is the correct way to apply a margin of 10 pixels on all sides of a "div" element?</h3>
-                
-                <label>
-                    <input type="radio" name="q6" value="margin">
-                    margin: 10px 0 0 0;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q6" value="margin">
-                   margin: 10px;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q6" value="margin">
-                     margin: all 10px;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q6" value="padding">
-                    padding: 10px;
-                </label>
-            </div>
-
-             <div class="css-questions"  role="group" aria-labelledby="q7-label">
-                <h3 id="q7-label">7. The Box Model in CSS consists of which of the following components(from inside out)?</h3>
-                
-                <label>
-                    <input type="radio" name="q7" value="sequence">
-                    Margin,Border,Padding,Content
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q7" value="sequence">
-                    Content,Padding,Border,Margin
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q7" value="sequence">
-                     Padding,Border,Content,Margin
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q7" value="sequence">
-                    Border,Padding,Content,Margin
-                </label>
-            </div>
-
-            <div class="css-questions"  role="group" aria-labelledby="q8-label">
-                <h3 id="q8-label">8. Which property is used to create space between the element's border and its content?</h3>
-                
-                <label>
-                    <input type="radio" name="q8" value="margin">
-                    margin
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q8" value="spacing">
-                   spacing
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q8" value="border-spacing">
-                     border-spacing 
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q8" value="padding">
-                   padding
-                </label>
-            </div>
-
-            <div class="css-questions"  role="group" aria-labelledby="q9-label">
-                <h3 id="q9-label">9. Which display property value is used to treat an element as if it doesn't exist in the document flow?</h3>
-                
-                <label>
-                    <input type="radio" name="q9" value="none">
-                    display: none;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q9" value="hidden">
-                   display: hidden;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q9" value="visibility">
-                     visibility: hidden;
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q9" value="block">
-                    display: block;
-                </label>
-            </div>
-
-             <div class="css-questions"  role="group" aria-labelledby="q10-label">
-                <h3 id="q10-label">10. In Flexbox, which property is used on the container to align items vertically(along the cross-axis)?</h3>
-                
-                <label>
-                    <input type="radio" name="q10" value="justify-content">
-                    justify-content
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q10" value="align-content">
-                   align-content
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q10" value="align-items">
-                    align-items
-                </label>
-                <br>
-                
-                <label>
-                    <input type="radio" name="q10" value="vertical-align">
-                   vertical-align
-                </label>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
