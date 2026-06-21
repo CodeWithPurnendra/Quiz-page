@@ -26,4 +26,5 @@ It features a clean navigation bar, section-based layout, and a visually appeali
 
  **Clone the repository**
    ```bash
-  https://github.com/CodeWithPurnendra/Quiz-page.git
+git clone github.com/CodeWithPurnendra/Quiz-page.git
+```
